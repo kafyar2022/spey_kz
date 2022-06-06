@@ -35,10 +35,6 @@
   <link rel="apple-touch-icon-precomposed" href="{{ asset('img/favicons/cropped-favi-180x180.png') }}">
   <meta name="msapplication-TileImage" content="{{ asset('img/favicons/cropped-favi-270x270.png') }}">
 
-  {{-- <meta name="robots" content="none">
-        <meta name="googlebot" content="noindex, nofollow">
-        <meta name="yandex" content="none"> --}}
-
   {{-- Owl carousel --}}
   <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
   {{-- App Styles --}}
@@ -50,12 +46,55 @@
   @yield('content')
   @include('layouts.footer')
   <!-- JQuery 3.6  -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   {{-- Owl carousel --}}
   <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
   {{-- App Scripts --}}
   <script src="{{ mix('js/app.js') }}"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123986695-40"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-123986695-40');
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter48787568 = new Ya.Metrika({
+            id: 48787568,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+          });
+        } catch (e) {}
+      });
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function() {
+          n.parentNode.insertBefore(s, n);
+        };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else {
+        f();
+      }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/48787568" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript><!-- /Yandex.Metrika counter -->
 </body>
 
 </html>
