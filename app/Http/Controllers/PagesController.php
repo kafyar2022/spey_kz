@@ -431,7 +431,7 @@ class PagesController extends Controller
       }
     }
     // Get map
-    $defaultID = 11;
+    $defaultID = 10;
     $siteID = $request->site;
     if (!$siteID) {
       $siteID = $defaultID;

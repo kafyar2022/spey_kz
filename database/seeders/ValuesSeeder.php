@@ -17,31 +17,31 @@ class ValuesSeeder extends Seeder
     $values = array(
       array(
         'id' => 1,
-        'en_title' => 'Life',
-        'ru_title' => 'Жизнь',
-        'en_text' => 'We recognize life as a gift that needs to be cherished.',
-        'ru_text' => 'Мы признаем жизнь подарком, который нужно беречь.',
-      ),
-      array(
-        'id' => 2,
         'en_title' => 'Creation',
         'ru_title' => 'Творчество',
         'en_text' => 'We are discovering new facets of the possible.',
         'ru_text' => 'Мы открываем новые грани возможного.',
       ),
       array(
-        'id' => 3,
+        'id' => 2,
         'en_title' => 'Responsibility',
         'ru_title' => 'Ответсвенность',
         'en_text' => 'We are responsible for the well-being of society.',
         'ru_text' => 'Мы несем ответственность за благополучие общества.',
       ),
       array(
-        'id' => 4,
+        'id' => 3,
         'en_title' => 'Team spirit',
         'ru_title' => 'Командный дух',
         'en_text' => 'We are united and achieve our goals.',
         'ru_text' => 'Мы едины и достигаем поставленных целей.',
+      ),
+      array(
+        'id' => 4,
+        'en_title' => 'Respect',
+        'ru_title' => 'Уважение',
+        'en_text' => "We value everyone's opinion.",
+        'ru_text' => 'Мы ценим мнение каждого.',
       ),
       array(
         'id' => 5,
@@ -52,10 +52,10 @@ class ValuesSeeder extends Seeder
       ),
       array(
         'id' => 6,
-        'en_title' => 'Relationship',
-        'ru_title' => 'Отношение',
-        'en_text' => "We value everyone's opinion.",
-        'ru_text' => 'Мы ценим мнение каждого.',
+        'en_title' => 'Life',
+        'ru_title' => 'Жизнь',
+        'en_text' => 'We recognize life as a gift that needs to be cherished.',
+        'ru_text' => 'Мы признаем жизнь подарком, который нужно беречь.',
       ),
     );
 

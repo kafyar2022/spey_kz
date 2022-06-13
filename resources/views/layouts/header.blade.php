@@ -23,7 +23,7 @@
       <div class="sites-dropdown__content" data-family="sites-dropdown">
         <ul class="sites-dropdown__list" data-family="sites-dropdown">
           @foreach ($header->sites as $site)
-            @if ($site->id != 11)
+            @if ($site->id != 10)
               <li class="sites-dropdown__item" data-family="sites-dropdown">
                 <a class="sites-dropdown__link" data-family="sites-dropdown" target="_blank" href="{{ $site->link }}">{{ $site->title }}</a>
               </li>
